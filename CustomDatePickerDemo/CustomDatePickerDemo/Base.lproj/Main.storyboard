@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vV1-Pf-2Kw">
+                                <rect key="frame" x="112" y="313" width="151" height="40"/>
+                                <color key="backgroundColor" red="0.73619054480000001" green="1" blue="0.97505116780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vha-Ys-5NY"/>
+                                </constraints>
+                                <state key="normal" title="年-月"/>
+                                <connections>
+                                    <action selector="YearMonth_Btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wzc-9G-Fw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNF-p4-rPt">
+                                <rect key="frame" x="112" y="243" width="151" height="40"/>
+                                <color key="backgroundColor" red="0.73619054480000001" green="1" blue="0.97505116780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Hj-2f-mEr"/>
+                                </constraints>
+                                <state key="normal" title="年-月-日"/>
+                                <connections>
+                                    <action selector="YearMonthDay_Btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRT-Zz-IQU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKY-49-Rnb">
+                                <rect key="frame" x="112" y="390" width="151" height="40"/>
+                                <color key="backgroundColor" red="0.73619054480000001" green="1" blue="0.97505116780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0QT-YC-fIi"/>
+                                </constraints>
+                                <state key="normal" title="年"/>
+                                <connections>
+                                    <action selector="Year_Btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvt-ZP-yn9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bNF-p4-rPt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="112" id="6cg-x4-DpO"/>
+                            <constraint firstAttribute="trailing" secondItem="MKY-49-Rnb" secondAttribute="trailing" constant="112" id="OY8-VI-rQ6"/>
+                            <constraint firstItem="vV1-Pf-2Kw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaY-As-eGn"/>
+                            <constraint firstItem="vV1-Pf-2Kw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="112" id="YlR-ZM-CXX"/>
+                            <constraint firstAttribute="trailing" secondItem="vV1-Pf-2Kw" secondAttribute="trailing" constant="112" id="ZMM-l5-PnF"/>
+                            <constraint firstItem="vV1-Pf-2Kw" firstAttribute="top" secondItem="bNF-p4-rPt" secondAttribute="bottom" constant="30" id="cPA-MA-T83"/>
+                            <constraint firstItem="MKY-49-Rnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="112" id="ch3-CV-hRe"/>
+                            <constraint firstItem="MKY-49-Rnb" firstAttribute="top" secondItem="vV1-Pf-2Kw" secondAttribute="bottom" constant="37" id="mCT-Aq-EID"/>
+                            <constraint firstItem="vV1-Pf-2Kw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v3I-KH-RNo"/>
+                            <constraint firstAttribute="trailing" secondItem="bNF-p4-rPt" secondAttribute="trailing" constant="112" id="yva-kg-BmA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
